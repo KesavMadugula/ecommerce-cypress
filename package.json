@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test:AddtoCArt": "npx cypress run --spec cypress/Integration/examples/homepagetest.js",
+    "test:registertest":"npx cypress run --spec cypress/Integration/examples/registertest.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "ISC",   
   "devDependencies": {
     "cypress": "^14.2.1",
     "cypress-mochawesome-reporter": "^3.8.2"

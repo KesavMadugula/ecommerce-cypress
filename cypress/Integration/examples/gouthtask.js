@@ -8,6 +8,7 @@ describe('API Testing Menu', () => {
         const menuText = $el.text().trim();
         if (menuText.includes('API Testing')) {
           cy.wrap($el).click();
+          cy.wait(3000)
         }
       });
       cy.url().should('include', '/api_list');
